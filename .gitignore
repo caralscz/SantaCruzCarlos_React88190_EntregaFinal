@@ -1,0 +1,38 @@
+# 
+# Estudiando React JS | CoderHouse entrega 02 | Navega las rutas | 2025
+# Desarrollado por Carlos A. santa Cruz
+# React Js Flex Comisión 88190 - Del 13/05/25 al 01/07/25
+# Martes  19:00 a 21:00h
+# Profe: Laura Therisod  -  Tutor: Andres Rubio  
+#
+# archivos y carpetas a ignorar por git (que no queremos subir al repositorio)
+# si el nombre finaliza con /, ignora la carpeta y todo su contenido
+# este es el contenedor de paginas que uso de apuntes
+.apuntes/
+
+# de aquí en adelante son los que ignora React y NodeJs por defecto
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

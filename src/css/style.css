@@ -1,0 +1,213 @@
+*{
+  margin : 0;
+  padding:0;
+  box-sizing: border-box;
+ 
+}
+html {
+  background-image: url("../../public/fondo-3d-con-cubos-blancos.jpg");
+  /* background-position: center center;  Para centrar la imagen */
+  background-attachment: fixed;   /* Para que la imagen no haga scroll con la pagina */
+  background-repeat: no-repeat;   /* Evita la repetición de la imagen */
+  background-size: cover;         /* Escala la imagen para cubrir todo el fondo */
+}
+
+body {
+  min-width: 27.5rem;   /*27.5rem=440px*/
+  max-width: 62rem;     /*62rem=992px*/
+  padding: .3125rem;    /* 5px */
+
+}
+
+.mi-boton{
+  background-color: coral;
+  padding: 1rem ;     
+  border-radius: 10%;
+}
+
+/* Lo uso para ocultar las letras en el fondo y hacer espacios o lineas en blanco */
+.puntoBlanco{
+  color: white;
+}
+
+/* para dejar margen izquierdo */
+.margenIzq{
+  margin-left: 20px; 
+
+}
+/* =========================================== */
+/**/
+/* El loading...  CargandoComponent.jsx        */
+/* y otras animaciones                         */
+/**/
+/* =========================================== */
+
+.imgCargando{
+  width: 12.5rem; /* 200px */
+  /**height: 9.375rem; */ /* 150px */
+  background-color: transparent ;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  /*
+  de NADA: width:'100%', height:'85vh',display:'flex', justifyContent:'center', alignItems:'center' 
+  */
+}
+
+.imgError404{
+  width: 40rem;       
+  background-color: transparent ;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  /*
+  de NADA: width:'100%', height:'85vh',display:'flex', justifyContent:'center', alignItems:'center' 
+  */
+}
+
+.imgCarritoVacio{
+  width: 30rem;       
+  background-color: transparent ;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  /*
+  de NADA: width:'100%', height:'85vh',display:'flex', justifyContent:'center', alignItems:'center' 
+  */
+}
+
+.textImgCargando {
+  text-align: center;
+  font-size: 1.25rem; /* 20px */
+  color: rgb(98, 124, 197);
+  font-weight: bold;
+}
+
+.textError{
+  color: red;
+  background-color: white;
+  font-weight: bold;
+}
+/* =========================================== */
+/**/
+/* Formulario de carga de datos personales al comprar: FinalizarCompra.jsx */
+/**/
+/* =========================================== */
+
+.formFinCompra{
+  width: 30rem; 
+  margin-right:  4;
+  background-color: lightgray;
+}
+
+
+/* =========================================== */
+/**/
+/* ItemListContainer.css */
+/**/
+/* =========================================== */
+
+.titulo-principal {
+  background-color: rgb(140, 162, 223);
+  color: white;
+  padding-top: .3125rem;   /* 5px */
+  padding-bottom: .625rem; /* 10px */
+  padding-left: .625rem;  
+}
+
+.subtitulo-medio {
+  background-color: lightblue;
+  color: gray;
+
+}
+
+.subtitulo-inferior {
+  background-color: lightgray;
+  color: black;
+}
+
+/* Contenedor dentro del cual se muestran los "card" */
+.cartViewContenedor{
+  display: flex ; 
+  align-items: center ;
+  width: 80%;
+  padding: 10px;
+  border: 2px solid #ccc;
+}
+
+.contenedor-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+  align-items: flex-start ;/*center*/
+}
+/*   */
+.contenedor {
+  margin-top: 0.625rem; /* 10px */
+  /* color del backgrund */
+  background-color:  rgb(197, 198, 201); /* rgb(193, 248, 193); */
+  /* centramos el bloque */
+  margin-left: auto; /* Establece el margen izquierdo automático */
+  margin-right: auto; /* Establece el margen derecho automático */
+}
+
+
+/* =========================================== */
+/**/
+/* Estilos para NavBar                     */
+/**/
+/* =========================================== */
+.contenedorHeader {
+  border-top-left-radius: 0.625rem; /* 10px */
+  border-top-right-radius: 0.625rem; /* 10px */
+}
+
+
+/* =========================================== */
+/**/
+/* Estilos para el footer                      */
+/* En el curso html en scss ver _footer.scss   */
+/**/
+/* =========================================== */
+/*  el contenedor del footer  */
+/* como estilo usamos class(contenedor contenedorFooter) */
+.contenedorFooter {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  flex: 0 1 auto;
+  /* flex: 0 1 auto;     Mantiene el tamaño natural de cada contenedor */
+  border-bottom-left-radius: 0.625rem; /* 10px */
+  border-bottom-right-radius: 0.625rem; /* 10px */
+}
+
+.footerDivLogo {
+  width: 20%;
+  align-content: space-around;
+  text-align: left;
+  /* // Centra la imagen horizontalmente dentro de su contenedor */
+}
+.footerDivLogo img {
+  /* el icono de la izquierda del pie de pagina */
+  width: 5.5rem;      /* //88px */
+  border-radius: 0.625rem;  /* //10px */
+  opacity: 0.7;  /* // Ajusta el valor de opacidad entre 0 y 1 */
+  margin: 0.3rem;  /* // 4.8px */
+}
+
+.footerDivTexto {
+  text-align: left;
+  font-size: 0.75rem;  /* // 12px; */
+  max-width: 80%;
+}
+
+.imgHB {
+  /* el icono del banco en el H1 */
+  width: 3.125rem; /* 50px */
+  margin-right: 0.625rem;
+  margin-left: 0.625rem;
+  border-radius: 0.625rem;
+}
