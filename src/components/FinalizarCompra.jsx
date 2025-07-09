@@ -55,7 +55,8 @@ const FinalizarCompra = () => {
         <div>
             <h1  className="titulo-principal">Compra realizada</h1>
             <img src={imgCompraFinalizada}  className='imgCargando' title='Feliz compra !!' /><br />
-            <h2>El id de su compra es: {idOrden}</h2>  
+            <h2>El id de su compra es: {idOrden}</h2> 
+             <Link to='/' className='btn btn-primary btn-sm'  title="Ver todos los productos">Seguir comprando</Link> 
             <hr /> 
         </div>
     :   
