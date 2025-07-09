@@ -1,4 +1,3 @@
-// Es para que redirija las paginas no encontradas a mi proyecto que ya las contempl
 {
   "rewrites": [
     { "source": "/(.*)", "destination": "/" }
